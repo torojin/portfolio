@@ -1,5 +1,7 @@
 *{margin:0; padding:0; box-sizing:border-box;}
-body{font-family: "Helvetica", Helvetica, Arial, sans-serif; color:#58666e; background-color: #f0f3f4;}
+body{font-family: "Helvetica", Helvetica, Arial, sans-serif; 
+    color:#58666e; 
+    background-color: #f0f3f4;}
 li{list-style:none;}
 a{text-decoration: none;}
 h1{font-size:1.8em;}
@@ -8,6 +10,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 #wrap{
+    width: 100%;
     /*margin-top = header height*/
     margin-top: 60px;
 }
@@ -21,16 +24,16 @@ header{
     position: fixed;
     top: 0;
 }
-nav{
-    float: right;
-}
-
 .logo{
     display: inline-block; 
     height: 36px;
     margin: 12px 0 12px 25px;
 }
+.logo > img { height: 36px;}
 
+nav{
+    float: right;
+}
 .nav-items li{
     display: inline-block;
 }
@@ -45,7 +48,7 @@ nav{
 }
 
 /*clearfix란??? after??*/
-#content-wrap::after{
+#content-wrap:after{
     content:"";
     display: block;
     clear: both;
@@ -95,9 +98,8 @@ footer{
     height: 60px;
     width: 100%;
     padding: 0 25px;
-    /*line-height: 60px;*/
+    line-height: 60px;
     color: #8a8c8f;
     border-top: 1px solid #dee5e7; /*상단 테두리*/
     background-color: #f2f2f2;
-
 }
