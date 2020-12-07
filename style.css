@@ -84,13 +84,22 @@ h3 {
 
 /* Navbar */
 #navber {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: transparent;
+  transition: var(--animation-duration) ease-in-out;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
 }
+
+#navber.navbar__dark {
+  background-color: var(--color-pink);
+  padding: 8px;
+}
+
 .navbar__menu {
   display: flex;
 }
@@ -125,6 +134,7 @@ h3 {
 #home {
   background: url('imgs/homebackground.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 100px;
   text-align: center;
 }
 
