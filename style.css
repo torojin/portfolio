@@ -93,6 +93,7 @@ h3 {
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  z-index: 1;
 }
 
 #navber.navbar__dark {
